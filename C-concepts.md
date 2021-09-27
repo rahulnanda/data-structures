@@ -41,6 +41,6 @@ After compilation the data structure will be supplemented with padding bytes to 
         char Padding2[3]; /* 3 bytes to make total size of the structure 12 bytes */
     };
 
-The compiled size of the structure is now 12 bytes. It is important to note that the last member is padded with the number of bytes required so that the total size of the structure should be a multiple of the largest alignment of any structure member (alignment(int) in this case, which = 4 on linux-32bit/gcc)[citation needed].
+The compiled size of the structure is now 12 bytes. It is important to note that the last member is padded with the number of bytes required so that the total size of the structure should be a multiple of the largest alignment of any structure member (alignment(int) in this case, which = 4 on linux-32bit/gcc).
 
 In this case 3 bytes are added to the last member to pad the structure to the size of a 12 bytes (alignment(int) × 3). 
